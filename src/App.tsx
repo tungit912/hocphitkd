@@ -97,7 +97,6 @@ export default function App() {
       <main className="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl w-full">
           <div className="text-center mb-12">
-            <span className="text-tkd-red font-bold tracking-widest uppercase text-sm mb-4 block">Ghi danh trực tuyến</span>
             <h2 className="text-4xl md:text-5xl font-display font-black text-slate-900 mb-6 leading-tight">
               Nộp học phí Quý 2 năm 2026
             </h2>
@@ -247,7 +246,7 @@ export default function App() {
                       </>
                     ) : (
                       <>
-                        Xác Nhận Đăng Ký <ChevronRight size={24} />
+                        Nộp học phí <ChevronRight size={24} />
                       </>
                     )}
                   </button>

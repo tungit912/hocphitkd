@@ -48,7 +48,7 @@ export default function App() {
     setIsSubmitting(true);
     setError(null);
     
-    const appsScriptUrl = import.meta.env.VITE_APPS_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbxBVwHW2mfXhrJUNmohqrrzlu9LCoH3f37dKiztcpFUk3aERscCOTyVtrGRlMO7Awb-/exec';
+    const appsScriptUrl = import.meta.env.VITE_APPS_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbxwvxMUhZQFrwdqMS3Od4aopu8n6b0rtKiexEBbiw33-qmsNdG8jOSOmcLPkz-8ppT1/exec';
     
     const paymentCode = `TKD ${generateRandomCode(6)}`;
     
@@ -116,7 +116,7 @@ export default function App() {
                 <div className="w-20 h-20 bg-green-50 text-green-500 rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-inner">
                   <CheckCircle2 size={40} />
                 </div>
-                <h3 className="text-3xl font-black text-slate-900 mb-4">Gửi Đăng Ký Thành Công!</h3>
+                <h3 className="text-3xl font-black text-slate-900 mb-4 uppercase tracking-tight">mã QR nộp học phí</h3>
                 <p className="text-slate-600 mb-8 max-w-sm mx-auto">
                   Vui lòng quét mã QR bên dưới để hoàn tất thanh toán học phí.
                 </p>
@@ -138,7 +138,7 @@ export default function App() {
                   onClick={() => setIsSubmitted(false)}
                   className="w-full py-4 bg-slate-900 text-white font-bold rounded-2xl hover:bg-slate-800 transition-all"
                 >
-                  Quay lại trang đăng ký
+                  Quay lại trang nộp học phí
                 </button>
               </motion.div>
             ) : (

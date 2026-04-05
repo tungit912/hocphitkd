@@ -48,7 +48,7 @@ export default function App() {
     setIsSubmitting(true);
     setError(null);
     
-    const appsScriptUrl = import.meta.env.VITE_APPS_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbyHkh13oAX4S21gJWWTTcnTXr1p_hOc63fUTJXKhSXpghRfrLjti3nvcKY9IrXFXL2S/exec';
+    const appsScriptUrl = import.meta.env.VITE_APPS_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbxBVwHW2mfXhrJUNmohqrrzlu9LCoH3f37dKiztcpFUk3aERscCOTyVtrGRlMO7Awb-/exec';
     
     const paymentCode = `TKD ${generateRandomCode(6)}`;
     
